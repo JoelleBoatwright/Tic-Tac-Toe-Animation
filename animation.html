@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="boxes"></div>
+            <div class="col-md-1" style="text-align: center; margin-left: 20px">
+                <label for="radio" id="player1">Player 1:</label>
+                <div class="radio">
+                    <label><input type="radio" name="symbol" id="X" checked>X</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="symbol" id="O">O</label>
+                </div>
+                <p><button id="selectXO" class="button">Select</button></p>
+            </div>
+            <div class="col-md-1">
+                <p id="player2">Player 2:</p>
+                <table style="margin: auto">
+                    <tr>
+                        <td id="p2XO"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="scoreBoard" class="col-md-2">
+                <table style="margin: auto">
+                    <tr>
+                        <th>P1</th>
+                        <th>P2</th>
+                        <th>Tie</th>
+                    </tr>
+                    <tr>
+                        <th id="scoreP1"></th>
+                        <th id="scoreP2"></th>
+                        <th id="scoreTie"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="gameBoard">
+                    <div id=startGame>
+                        <p><button id="start" class="button">Start Game</button></p>
+                    </div>
+                    <table style="margin: auto">
+                        <tr>
+                            <td><button id="1" class="play"></button></td>
+                            <td><button id="2" class="play"></button></td>
+                            <td><button id="3" class="play"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="4" class="play"></button></td>
+                            <td><button id="5" class="play"></button></td>
+                            <td><button id="6" class="play"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="7" class="play"></button></td>
+                            <td><button id="8" class="play"></button></td>
+                            <td><button id="9" class="play"></button></td>
+                        </tr>
+                    </table>
+
+                    <div id="winGame"></div>
+
+                    <div>
+                        <p><button id="playAgain" class="button">Restart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="animation.js"></script>
+</body>
+
+</html>

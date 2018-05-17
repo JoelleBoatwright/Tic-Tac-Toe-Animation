@@ -1,0 +1,131 @@
+body {
+    background-color: #b9c8d2;
+}
+
+#player1 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.radio {
+    font-size: 20px;
+}
+
+#player2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#p2XO {
+    border: 2px solid black;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#start {
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#winGame {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#gameBoard td {
+    border: 3px solid black;
+    background-color: white;
+    transition: transform .5s, background .5s;
+}
+
+#gameBoard td:hover {
+    background-color: lightgray;
+}
+
+.button {
+    position: relative;
+    padding: 5px;
+    font-size: 17px;
+    background-color: white;
+    border: 2px black solid;
+    transition: background .5s;
+}
+
+.button:hover {
+    background-color: lightgray;
+    transition: transform .2s;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transition: transform 0s;
+    transform: scale(1.1);
+}
+
+.play {
+    height: 90px;
+    width: 90px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    font: sans-serif;
+    outline-width: 0px;
+    transition: transform .5s, background .5s;
+}
+
+.play:hover {
+    background-color: lightgray;
+}
+
+#playAgain {
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+#scoreBoard {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#scoreBoard th {
+    border: 3px solid black;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+#scoreBoard td {
+    height: 50px;
+    width: 60px;
+}
+
+#boxes {
+    position: absolute;
+    background: white;
+    border-style: solid;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: solid;
+    border-color: gray;
+}
