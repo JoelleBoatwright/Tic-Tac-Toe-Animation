@@ -5,6 +5,7 @@ var X = document.getElementById("X");
 var O = document.getElementById("O");
 var winGame = document.getElementById("winGame");
 var reset = document.getElementById("playAgain");
+var play = document.getElementsByClassName("play");
 var nextTurn = 'playOne';
 var canPlace = false;
 var p1Score = 0;
@@ -124,27 +125,25 @@ function Box(xpos, ypos, xstep, ystep, color, id) {
 var boxes = [];
 var numBoxes = 150;
 var container = document.getElementById("boxes");
-var colors = ['#c9b8d3', '#d5b7c7', '#d1c2ba', '#b8d3bd', '#b7d3d5'];
 
-for(var i = 0; i < numBoxes; i++){
+for (var i = 0; i < numBoxes; i++) {
     var elem = document.createElement("div");
     elem.className = "box";
     elem.id = "box" + i;
     container.appendChild(elem);
-    boxes[i] = new Box(Math.random()*(outerWidth - 100),
-                       Math.random()*outerHeight,
-                       Math.random(),
-                       Math.random()*.7,
-                       '#'+Math.floor(Math.random()*13000).toString(),
-                       elem.id);
+    boxes[i] = new Box(Math.random() * (outerWidth - 100),
+        Math.random() * outerHeight,
+        Math.random(),
+        Math.random() * .7,
+        '#' + Math.floor(Math.random() * 13000).toString(),
+        elem.id);
 }
 
 var id = setInterval(frame, 5);
 
 function frame() {
     for (var i = 0; i < boxes.length; i++) {
-        if (boxes[i].xpos > 350 || boxes[i].xpos < 0) {
-        }
+        if (boxes[i].xpos > 350 || boxes[i].xpos < 0) {}
         if (boxes[i].ypos > 700 || boxes[i].ypos < 0) {
             boxes[i].ypos = 0;
             boxes[i].xpos = (outerWidth - 100) * Math.random();
